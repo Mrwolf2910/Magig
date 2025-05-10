@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Fantasy Hackathon - Quest of the Dragon Mage</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Quest of the Dragon Mage</h1>
+      <p>Embark on a magical journey to uncover the secrets of the ancient dragon mage. Will you rise as the hero of this enchanted land?</p>
+    </header>
+    <nav>
+      <button onclick="navigate('story')">Story</button>
+      <button onclick="navigate('quest')">Quest</button>
+      <button onclick="navigate('contact')">Contact</button>
+    </nav>
+    <main>
+      <section id="story" class="content">
+        <h2>The Beginning</h2>
+        <p>In a world where magic flows like rivers and dragons guard ancient relics, a dark curse has fallen upon the kingdom of Eldoria. Only the chosen one can break it...</p>
+        <button onclick="startAdventure()">Begin Your Quest</button>
+      </section>
+      <section id="quest" class="content hidden">
+        <h2>The First Trial</h2>
+        <p>The forest whispers of hidden dangers. Will you venture forth to find the Amulet of Light?</p>
+        <button onclick="nextTrial()">Continue</button>
+      </section>
+      <section id="contact" class="content hidden">
+        <h2>Contact Us</h2>
+        <p>For more information, reach out to the Dragon Mage Guild at <a href="#">info@dragonmageguild.com</a>.</p>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
